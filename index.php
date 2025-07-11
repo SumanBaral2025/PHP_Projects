@@ -11,7 +11,7 @@
 
       if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
-        // 🔴 1. DELETE check comes first
+        //  1. DELETE check comes first
         if (isset($_POST['deleteSno'])) {
           $sno = $_POST['deleteSno'];
 
@@ -24,7 +24,7 @@
           }
       }
   
-      // 🟠 2. UPDATE
+      //  2. UPDATE
       elseif(isset($_POST['sno'])) {
           $sno = $_POST['sno'];
           $title = $_POST["title"];
@@ -39,7 +39,7 @@
           }
       }
   
-      // 🟢 3. INSERT
+      //  3. INSERT
       elseif(isset($_POST['title']) && isset($_POST['description'])) {
           $title = $_POST["title"];
           $description = $_POST["description"];
