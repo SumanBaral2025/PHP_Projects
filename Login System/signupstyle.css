@@ -1,0 +1,108 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.signup-container {
+    background-color: #fff;
+    padding: 25px 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 380px;
+    text-align: center;
+}
+
+.signup-container h1 {
+    font-size: 28px;
+    margin-bottom: 5px;
+    color: #1c1e21;
+}
+
+.signup-container .subtitle {
+    font-size: 15px;
+    color: #606770;
+    margin-bottom: 20px;
+}
+
+.signup-form {
+    text-align: left;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="password"],
+.signup-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 6px 0;
+    border: 1px solid #ccd0d5;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.name-fields {
+    display: flex;
+    gap: 10px;
+}
+
+.name-fields input {
+    flex: 1;
+}
+
+.gender-fields {
+    display: flex;
+    gap: 15px;
+    margin: 10px 0 15px;
+}
+
+.gender-fields label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-size: 15px;
+    color: #1c1e21;
+}
+
+.terms {
+    font-size: 12px;
+    color: #777;
+    margin: 15px 0;
+    text-align: center;
+}
+
+.terms a {
+    color: #385898;
+    text-decoration: none;
+}
+
+.terms a:hover {
+    text-decoration: underline;
+}
+
+.signup-btn {
+    width: 50%;
+    padding: 10px;
+    background-color: #00a400;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+
+.signup-btn:hover {
+    background-color: #009000;
+}
+.error-message {
+    text-align: center;
+    margin-top: 10px;
+    font-size: 14px;
+    color: red;
+}

@@ -1,0 +1,108 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar */
+  .navbar {
+    width: 100%;
+    background-color: #0d6efd;
+    padding: 15px 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-family: 'Poppins', sans-serif;
+    position: relative;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  /* Menu (Center + Auth) */
+  .menu {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: center;
+  }
+  
+  /* Center Navigation */
+  .nav-center {
+    margin-left: 30px;
+    display: flex;
+    gap: 25px;
+    list-style: none;
+
+  }
+  
+  /* Auth Navigation (Login, Signup) */
+  .nav-auth {
+    display: flex;
+    gap: 12px;
+    list-style: none;
+    margin-left: auto;
+  }
+  
+  .nav-center li a,
+  .nav-auth li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .nav-center li a:hover,
+  .nav-auth li a:hover {
+    color: #ffc107;
+  }
+  
+  /* Hamburger Icon */
+  .menu-toggle {
+    display: none;
+    font-size: 2rem;
+    color: #fff;
+    cursor: pointer;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .menu {
+      position: absolute;
+      top: 70px;
+      left: 0;
+      width: 100%;
+      background: #0d6efd;
+      flex-direction: column;
+      align-items: center;
+      display: none;
+      padding: 20px 0;
+    }
+  
+    .menu.active {
+      display: flex;
+    }
+  
+    .nav-center,
+    .nav-auth {
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+    }
+  
+    .nav-auth {
+      margin-left: 0;
+    }
+  
+    .menu-toggle {
+      display: block;
+    }
+  }
+
+ 
+
+  
