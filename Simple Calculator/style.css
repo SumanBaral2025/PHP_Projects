@@ -1,0 +1,36 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #f0f0f0;
+    display: flex;
+    margin-top: 150px;
+    justify-content: center;
+    align-items: center;
+}
+.calculator {
+    background: #fff;
+    padding: 30px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 300px;
+}
+.calculator input,
+.calculator select {
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+.calculator input[type="submit"] {
+    background: #4CAF50;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+.result {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #333;
+}
